@@ -1,0 +1,154 @@
+body {
+    background: yellow; 
+}
+
+#wrapper {
+    /* Positionning context */
+    position: relative;
+}
+
+.falus {
+    position: relative;
+    background-color: red;
+    width: 20em; 
+    height: 40em;
+    margin: 0 auto;
+    top: 100vh;
+    border-radius: 20em;
+}
+
+.left {
+    position: absolute;
+    background-color: red;
+    width: 20em;
+    height: 20em;
+    border-radius: 20em;
+    right: 15em;
+    top: 20em;
+}
+
+.right {
+    position: absolute;
+    background-color: red;
+    width: 20em;
+    height: 20em;
+    border-radius: 20em;
+    left: 15em;
+    top: 20em;
+}
+
+.left-wing {
+    z-index: -1;
+    position: absolute;
+    width: 15em;
+    height: 17em;
+    border-top-left-radius: 10em;
+    border-top-right-radius: 10em;
+    right: 19em;
+    top: 6em;
+    background: repeating-linear-gradient( 
+    90deg,
+    blue,
+    blue 2em,
+    lightblue 2em,
+    lightblue 6em);
+}
+
+.left-wing:after {
+    z-index: -2;
+    position: absolute;
+    background-color: yellow;
+    content: "";
+    width: 15em;
+    height: 15em;
+    border-radius: 10em;
+    top: 7em;
+}
+
+.right-wing {
+    z-index: -1;
+    position: absolute;
+    width: 15em;
+    height: 17em;
+    border-top-left-radius: 10em;
+    border-top-right-radius: 10em;
+    top: 6em;
+    left: 19em;
+    background: repeating-linear-gradient( 
+    90deg,
+    blue,
+    blue 3em,
+    lightblue 3em,
+    lightblue 7em);
+}
+
+.right-wing:after {
+    z-index: -2;
+    position: absolute;
+    background-color: yellow;
+    content: "";
+    width: 15em;
+    height: 15em;
+    border-radius: 10em;
+    top: 7em;
+}
+
+.left-eye {
+    position: absolute;
+    background-color: white;
+    width: 5em;
+    height: 5em;
+    top: 7em; 
+    left: 3em;
+    border-radius: 3em;
+}
+
+.right-eye {
+    position: absolute;
+    background-color: white;
+    width: 5em;
+    height: 5em;
+    top: 7em; 
+    right: 3em;
+    border-radius: 3em;
+}
+
+.smile {
+    position: absolute;
+    background-color: white;
+    width: 8em;
+    height: 8em;
+    top: 12em; 
+    left: 6em;
+    border-radius: 4em;
+}
+
+.smile:before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 8em;
+    height: 4em;
+}
+
+.hat {
+    position: absolute;
+    background-color: black;
+    width: 7em;
+    height: 5em;
+    left: 12em;
+    bottom: 38em;
+    transform: rotate(30deg);
+    border-radius: 4em;
+}
+
+.hat:before {
+    position: absolute;
+    background-color: black;
+    content: "";
+    width: 15em;
+    height: 4em;
+    left: -4em;
+    top: 2em;
+    border-radius: 200px;
+}
